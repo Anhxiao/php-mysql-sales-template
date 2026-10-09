@@ -1,21 +1,21 @@
-# 🛒 Project Bán Hàng PHP & MySQL (Docker Environment)
+# Project Bán Hàng PHP & MySQL
 
 Dự án ứng dụng Web quản lý và bán hàng đơn giản được xây dựng bằng **PHP (MySQLi)**, hệ quản trị cơ sở dữ liệu **MySQL 8.4** và đóng gói bằng **Docker / Docker Compose**.
 
 ---
 
-## 📌 Bảng mục tiêu phát triển (Project Roadmap)
+## Bảng mục tiêu phát triển (Project Roadmap)
 
 Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 5 giai đoạn (Hands-on):
 
-### 🚀 Hands-on 01: Khởi tạo dự án PHP với Git/GitHub và Docker
+### Hands-on 01: Khởi tạo dự án PHP với Git/GitHub và Docker
 * [x] Tạo Repository trên GitHub và clone về môi trường làm việc local.
 * [x] Thiết lập cấu trúc thư mục chuẩn cho dự án PHP.
 * [x] Cấu hình môi trường **PHP 8.3** & **Apache** bằng Docker.
 * [x] Kích hoạt extension **MySQLi** trong PHP container.
 * [x] Đóng gói và vận hành ứng dụng qua **Docker Compose**.
 
-### 🗄️ Hands-on 02: Xây dựng Cơ sở dữ liệu MySQL và dữ liệu mẫu
+###  Hands-on 02: Xây dựng Cơ sở dữ liệu MySQL và dữ liệu mẫu
 * [x] Bổ sung service **MySQL 8.4** vào mô hình Docker Compose đa dịch vụ (`web` & `db`).
 * [x] Quản lý cấu hình môi trường bảo mật qua `.env`, `.env.example` và tệp `.gitignore`.
 * [x] Sử dụng **Named Volume** để lưu trữ dữ liệu MySQL bền vững.
@@ -24,7 +24,7 @@ Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 
 * [x] Hỗ trợ quản lý nhiều hình ảnh cho một sản phẩm thông qua bảng quan hệ `product_images`.
 * [x] Tự động nạp dữ liệu mẫu (`Database/Seed.sql`) khi khởi tạo container MySQL lần đầu.
 
-### 🔌 Hands-on 03: Kết nối CSDL & Tổ chức cấu trúc layout dùng chung
+###  Hands-on 03: Kết nối CSDL & Tổ chức cấu trúc layout dùng chung
 * [x] Phân chia mã nguồn theo mô hình: **`Public/`** (phần công khai phục vụ truy cập) và **`Src/`** (mã nguồn nội bộ).
 * [x] Truyền biến môi trường cơ sở dữ liệu từ `.env` vào container Web.
 * [x] Kết nối PHP với MySQL bằng extension **MySQLi** (kết nối qua host `db` thay vì `localhost`).
@@ -32,7 +32,7 @@ Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 
 * [x] Tách layout giao diện thành các thành phần dùng chung: `header.php`, `navbar.php`, `footer.php`.
 * [x] Thực hiện truy vấn `SELECT` bảng danh mục (`categories`) và hiển thị dữ liệu lên giao diện Bootstrap 5.
 
-### 📝 Hands-on 04: Xây dựng chức năng CRUD cơ bản (Category Management)
+### Hands-on 04: Xây dựng chức năng CRUD cơ bản (Category Management)
 * [x] Nắm vững các khái niệm **CRUD** và phân biệt luồng dữ liệu **HTTP GET** / **POST**.
 * [x] Xử lý nhận dữ liệu biểu mẫu qua mảng siêu toàn cục `$_POST`.
 * [x] Áp dụng **Prepared Statement** và `bind_param()` để thực thi các câu lệnh SQL an toàn (chống SQL Injection).
@@ -43,7 +43,7 @@ Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 
   * **Delete:** Xóa danh mục an toàn bằng phương thức POST (`input type="hidden"` và cảnh báo xác nhận).
 * [x] Điều hướng trang linh hoạt sử dụng `header('Location: ...')`.
 
-### 📦 Hands-on 05: Quản lý sản phẩm (Product CRUD & Quan hệ nhiều bảng)
+### Hands-on 05: Quản lý sản phẩm (Product CRUD & Quan hệ nhiều bảng)
 * [x] Rà soát và chuẩn hóa các quan hệ khóa ngoại bắt buộc với ràng buộc `NOT NULL`.
 * [x] Thực hiện truy vấn kết hợp nhiều bảng (`products`, `categories`, `suppliers`, `product_images`) bằng phép nối SQL.
 * [x] Xây dựng trọn bộ chức năng CRUD cho Sản phẩm (**Product CRUD**).
@@ -54,7 +54,7 @@ Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 
 
 ---
 
-## 🛠️ Công nghệ sử dụng
+## Công nghệ sử dụng
 
 * **Language:** PHP 8.3
 * **Database:** MySQL 8.4
@@ -65,7 +65,7 @@ Dự án được xây dựng và hoàn thiện từng bước theo lộ trình 
 
 ---
 
-## 📂 Cấu trúc thư mục dự án
+## Cấu trúc thư mục dự án
 
 ```text
 php-mysql-sales-template/
