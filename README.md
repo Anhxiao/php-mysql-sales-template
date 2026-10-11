@@ -1,4 +1,4 @@
-# HỆ THỐNG QUẢN LÝ KHO HÀNG
+# HỆ THỐNG QUẢN LÝ THIẾT BỊ
 
 ## 1. Giới thiệu dự án
 
