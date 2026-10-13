@@ -19,6 +19,12 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="/products.php">
+                        Sản phẩm
+                    </a>
+                </li>
+                
+                <li class="nav-item">
                     <a class="nav-link" href="/admin/categories/">
                         Danh mục
                     </a>
