@@ -28,6 +28,24 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/categories/">
+                        Danh mục
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/products/">
+                        Sản phẩm
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/shippers">
+                        Đơn hàng
+                    </a>
+                </li>
+
             </ul>
 
         </div>
