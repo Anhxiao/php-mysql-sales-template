@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Kiểm tra Upload File';
-require_once '/var/www/src/includes/header.php';
-require_once '/var/www/src/includes/navbar.php';
+require_once '/var/www/src/includes/admin/header.php';
+require_once '/var/www/src/includes/admin/navbar.php';
 
 if (
     isset($_FILES['product_image'])
@@ -106,4 +106,4 @@ if (
 </div>
 
 <?php
-require_once '/var/www/src/includes/footer.php';
+require_once '/var/www/src/includes/admin/footer.php';

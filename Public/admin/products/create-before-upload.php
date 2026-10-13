@@ -99,8 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-require_once '/var/www/src/includes/header.php';
-require_once '/var/www/src/includes/navbar.php';
+require_once '/var/www/src/includes/admin/header.php';
+require_once '/var/www/src/includes/admin/navbar.php';
 ?>
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -108,7 +108,6 @@ require_once '/var/www/src/includes/navbar.php';
         <a href="/products/" class="btn btn-secondary">Quay lại</a>
     </div>
 
-    <!-- Hiển thị thông báo lỗi nếu validation thất bại -->
     <?php if ($error !== ''): ?>
         <div class="alert alert-danger">
             <?= htmlspecialchars($error) ?>
@@ -119,7 +118,6 @@ require_once '/var/www/src/includes/navbar.php';
         <div class="card-body">
             <form action="" method="POST">
                 
-                <!-- 1. Mã sản phẩm & Tên sản phẩm (Nằm cùng 1 hàng) -->
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label for="product_code" class="form-label">Mã sản phẩm <span class="text-danger">*</span></label>
@@ -197,5 +195,5 @@ require_once '/var/www/src/includes/navbar.php';
 </div>
 
 <?php
-require_once '/var/www/src/includes/footer.php';
+require_once '/var/www/src/includes/admin/footer.php';
 ?>

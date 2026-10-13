@@ -6,8 +6,8 @@ require_once '/var/www/src/config/database.php';
 $sql = "SELECT SupplierID, SupplierName, ContactName, Phone, Email, Address FROM suppliers ORDER BY SupplierID DESC";
 $result = $conn->query($sql);
 
-require_once '/var/www/src/includes/header.php';
-require_once '/var/www/src/includes/navbar.php';
+require_once '/var/www/src/includes/admin/header.php';
+require_once '/var/www/src/includes/admin/navbar.php';
 ?>
 
 <div class="container mt-4">
@@ -58,6 +58,6 @@ require_once '/var/www/src/includes/navbar.php';
 </div>
 
 <?php
-require_once '/var/www/src/includes/footer.php';
+require_once '/var/www/src/includes/admin/footer.php';
 $conn->close();
 ?>
